@@ -41,8 +41,8 @@ public class AndroidOpenAccessory {
 	}
 
 	public void publish(String topic, byte[] message) throws IOException {
-//		Log.i(TAG, "publish");
-//		new WriteHelper().execute(MQTT.publish(topic, message));
+		Log.i(TAG, "publish");
+		new WriteHelper().execute(MQTT.publish(topic, message));
 	}
 
 	public String subscribe(BroadcastReceiver receiver, String topic, int id) throws IOException {
